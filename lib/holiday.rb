@@ -82,7 +82,7 @@ holiday_hash.to_s.split("").map do |holiday, event|
 holiday.map do |holidays, supplies|
   holidays if holidays.include?("BBQ")
 
-  end
+end.flatten.compact 
 end
 
 
